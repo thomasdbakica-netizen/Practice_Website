@@ -15,7 +15,7 @@
 
     function sendMail(event) {
       event.preventDefault(); // Prevent page reload
-      emailjs.sendForm("service_cqb57gs", "template_n4pxb8o", "#contact-form")
+      emailjs.sendForm("service_supercoolawesome", "template_n4pxb8o", "#contact-form")
         .then(function(response) {
           alert("✅ Message sent successfully!");
           document.getElementById("contact-form").reset(); // clear form
