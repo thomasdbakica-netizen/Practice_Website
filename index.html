@@ -15,7 +15,7 @@
 
     function sendMail(event) {
       event.preventDefault(); // Prevent page reload
-      emailjs.sendForm("TEST.WEBSITE", "YOUR_TEMPLATE_ID", "#contact-form")
+      emailjs.sendForm("service_cqb57gs", "template_n4pxb8o", "#contact-form")
         .then(function(response) {
           alert("✅ Message sent successfully!");
           document.getElementById("contact-form").reset(); // clear form
@@ -33,6 +33,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
     .contact-container {
       background: #fff;
@@ -59,6 +60,7 @@
       border: 1px solid #ddd;
       border-radius: 6px;
       font-size: 14px;
+      box-sizing: border-box;
     }
     button {
       margin-top: 15px;
@@ -94,4 +96,5 @@
   </div>
 </body>
 </html>
+
 
