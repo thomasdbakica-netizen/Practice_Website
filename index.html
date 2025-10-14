@@ -94,6 +94,15 @@
       <button type="submit">Send Message</button>
     </form>
   </div>
+
+  <!-- Chatbase widget -->
+  <script src="https://chatbase.co/widget.js"></script>
+  <script>
+    window.chatbase.addEventListener("user-message", (event) => {
+      console.log("User said:", event.content);
+      // Your custom logic here
+    });
+  </script>
 </body>
 </html>
 
